@@ -1,0 +1,133 @@
+#clock12 {
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+#clock24 {
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    display: none;
+}
+p{
+    font-size: 18px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: all 0.4s linear;
+    flex-direction: column;
+  }
+  /* body.dark{
+    background-color: rgb(27, 23, 23);
+  } */
+  .toggleBtn{
+    z-index: 2;
+    padding: .5rem;
+    text-align: center;border-radius: 5rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1.5px 1.5px 5px #373636;
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+    margin-top: 1em;
+  }
+  .cont{
+    position: relative;
+  }
+  .bgMove{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    border: solid 3px gray;
+    top: 54%;
+    left: -235px;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 0.4s linear;
+    transform: translate(0%, -50%);
+    background-color: rgb(27, 23, 23);
+  }
+  .fa-sun{
+    color: transparent;
+  }
+  .fa-sun2{
+    color: transparent;
+  }
+  .bgMove.active{
+    color: #fff;
+    z-index: -2;
+    transition: all 0.4s linear;
+    transform: translate(425%, -50%);
+    background-color: rgb(27, 23, 23);
+  }
+  .dark{
+    color: rgb(16, 14, 14);
+    transition: all 0.4s linear;
+  }
+  .active{
+    color: white;
+    transition: all 0.4s linear;
+  }
+  .active2{
+    color: transparent;
+    transition: all 0.4s linear;
+  }
+  .active body{
+    border-color: purple;
+  }
+  i{
+    z-index: 4;
+    width: 100px;
+    margin: .5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.5s linear;
+  }
+  i:nth-child(1) {
+    left: 55px;
+  }
+  i:nth-child(2) {
+    right: 55px;
+  }
+  .morning{
+    /* background-color: skyblue; */
+    background-color: skyblue;
+  }
+
+  .afternoon{
+    background-color: rgb(248, 215, 66);
+  }
+  .evening{
+    background-color: black;
+  }
+  .morningText{
+    color: rgb(236, 5, 5) !important;
+  }

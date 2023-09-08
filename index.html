@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bodyColor">
+    <div id="clock12">
+        <span id="hours">00</span> :
+        <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+        <span id="ampm"></span>
+        <p id="display12">12 hours format</p>
+    </div>
+    <div id="clock24">
+        <span id="hours24">00</span> :
+        <span id="minutes24">00</span> :
+        <span id="seconds24">00</span>
+        <span id="ampm24"></span>
+        <p id="display24">24 hours format</p>
+    </div>
+
+    <label for="toggleBtn" class="toggleBtn" onclick="myFunction()">
+        <i class="fa-solid fa-sun">24hrs format</i>
+        <i id="moon" class="fa-solid fa-moon">12hrs format</i>
+        <div class="cont"><div class="bgMove"></div></div>
+
+    </label>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
